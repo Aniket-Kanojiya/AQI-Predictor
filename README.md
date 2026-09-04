@@ -1,4 +1,4 @@
-﻿# 🌫️ AQI Predictor — Air Quality Index Estimation & Analytics Platform
+# 🌫️ AQI Predictor — Air Quality Index Estimation & Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -16,7 +16,7 @@ An end-to-end Machine Learning and Data Analytics project predicting the **Natio
 - **Club / Program:** 1M1B - USAR  
 - **GitHub Repository:** [https://github.com/Aniket-Kanojiya/AQI-Predictor](https://github.com/Aniket-Kanojiya/AQI-Predictor)  
 - **Live Web Application:** [Add your Streamlit Cloud link here]  
-- **Official Documentation:** [📄 Project Report (Markdown)](./PROJECT_REPORT.md)  
+- **Official Documentation:** [📄 Project Report (Markdown)](./reports/PROJECT_REPORT.md)  
 
 ---
 
@@ -32,7 +32,7 @@ This initiative directly aligns with the United Nations Sustainable Development 
 
 ## 🏗️ System Architecture
 
-`
+```text
                        USER
    (City selection, pollutant sliders, or historical date)
                          │
@@ -54,7 +54,7 @@ This initiative directly aligns with the United Nations Sustainable Development 
                          │
                          ▼
     HISTORICAL RECORD COMPARISON & MODEL METRICS
-`
+```
 
 ---
 
@@ -62,11 +62,11 @@ This initiative directly aligns with the United Nations Sustainable Development 
 
 - 🏙️ **Multi-City Scope:** Real-time simulations and analysis for **Delhi, Mumbai, Kolkata, Chennai, and Bangalore**.
 - 🎛️ **Dual Operating Modes:**
-  - **Manual Simulation:** Adjust sliders for 12 criteria pollutants (PM2.5, PM10, NO2, SO2, CO, O3, etc.) to predict instant AQI.
+  - **Manual Simulation:** Adjust sliders for 12 criteria pollutants (`PM2.5`, `PM10`, `NO2`, `SO2`, `CO`, `O3`, etc.) to predict instant AQI.
   - **Historical Lookup:** Select any historical date (2015–2024) to inspect actual sensor recordings vs model predictions.
 - 🚦 **NAQI Categorization:** Automated mapping to official Indian National Air Quality Index color buckets (Good, Satisfactory, Moderate, Poor, Very Poor, Severe).
 - 📈 **30-Day Rolling Trends:** Multi-select interactive Plotly comparison overlaying historical pollution trajectories with standard risk bands.
-- ⚡ **Lightweight Architecture:** Zero-bloat design following the **Ponytail** senior developer principles, ensuring minimal dependencies, fast inference, and seamless Streamlit Community Cloud hosting.
+- ⚡ **Lightweight Architecture:** Minimal dependencies, fast inference, and seamless Streamlit Community Cloud hosting.
 
 ---
 
@@ -78,43 +78,40 @@ Data originates from the Central Pollution Control Board (CPCB) monitoring netwo
 
 | AQI Range | Category | Color Hex | Health Advisory |
 | :---: | :---: | :---: | :--- |
-| **0 – 50** | **Good** | #2ecc71 | Minimal impact |
-| **51 – 100** | **Satisfactory** | #a3d977 | Minor breathing discomfort to sensitive people |
-| **101 – 200** | **Moderate** | #f1c40f | Breathing discomfort with lung/heart disease |
-| **201 – 300** | **Poor** | #e67e22 | Breathing discomfort to most people on prolonged exposure |
-| **301 – 400** | **Very Poor** | #e74c3c | Respiratory illness on prolonged exposure |
-| **401 – 500** | **Severe** | #8b0000 | Affects healthy people, seriously impacts vulnerable |
+| **0 – 50** | **Good** | `#2ecc71` | Minimal impact |
+| **51 – 100** | **Satisfactory** | `#a3d977` | Minor breathing discomfort to sensitive people |
+| **101 – 200** | **Moderate** | `#f1c40f` | Breathing discomfort with lung/heart disease |
+| **201 – 300** | **Poor** | `#e67e22` | Breathing discomfort to most people on prolonged exposure |
+| **301 – 400** | **Very Poor** | `#e74c3c` | Respiratory illness on prolonged exposure |
+| **401 – 500** | **Severe** | `#8b0000` | Affects healthy people, seriously impacts vulnerable |
 
 ---
 
 ## 📁 Repository Structure
 
-`
+```text
 AQI-Predictor/
 ├── app/
 │   └── app.py                 # Streamlit web application
 ├── data/
 │   ├── city_day.csv           # Raw CPCB monitoring dataset
-│   ├── cleaned_aqi.csv        # Cleaned dataset (outliers capped, imputed)
-│   └── features.csv           # Feature engineered dataset (time, lag features)
+│   └── cleaned_aqi.csv        # Cleaned dataset used by Streamlit app
 ├── models/
 │   ├── aqi_model.pkl          # Trained regression model
 │   ├── feature_columns.pkl    # Serialized feature column list
 │   └── metrics.json           # Model evaluation metrics
 ├── reports/
-│   ├── figures/               # Generated exploratory data analysis plots
-│   └── PROJECT_REPORT.md      # Detailed academic / institutional project report
+│   └── PROJECT_REPORT.md      # Official academic & institutional project report
 ├── src/
 │   ├── data_cleaning.py       # Data validation, outlier capping & NAQI buckets
 │   ├── eda.py                 # Generates 5 EDA visual plots
 │   ├── features.py            # Temporal & lag feature extraction
 │   └── train.py               # Model training & serialization
-├── .gitignore                 # Excludes cache and non-essential binaries
-├── AGENTS.md                  # Development principles (Ponytail lazy senior dev mode)
-├── PROJECT_REPORT.md          # Root project report reference
-├── requirements.txt           # Production dependencies
-└── README.md                  # Project documentation
-`
+├── .gitignore                 # Excludes cache, virtualenvs, and intermediate artifacts
+├── LICENSE                    # MIT License
+├── README.md                  # Project documentation
+└── requirements.txt           # Minimal production dependencies
+```
 
 ---
 

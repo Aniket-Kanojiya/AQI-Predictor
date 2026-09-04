@@ -12,6 +12,16 @@ ENV/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Generated intermediate dataset (regenerable via python src/features.py)
+data/features.csv
+
+# Generated figures (regenerable via python src/eda.py)
+reports/figures/
+
+# Local agent configs & rules
+.agents/
+AGENTS.md
+
 # OS / Editor files
 .DS_Store
 Thumbs.db
