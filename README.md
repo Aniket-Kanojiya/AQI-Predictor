@@ -12,8 +12,7 @@ An end-to-end Machine Learning and Data Analytics project predicting the **Natio
 
 ## 📌 Project Overview
 
-- **Author:** Aniket Kanojiya  
-- **Club / Program:** 1M1B - USAR  
+- **Author:** Aniket Kanojiya   
 - **GitHub Repository:** [https://github.com/Aniket-Kanojiya/AQI-Predictor](https://github.com/Aniket-Kanojiya/AQI-Predictor)  
 - **Live Web Application:** 🌐 [https://aqipredictorml.streamlit.app/](https://aqipredictorml.streamlit.app/)  
 
@@ -174,4 +173,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Dataset:** [Air Quality Data in India (2015–2024)](https://www.kaggle.com/datasets/ankushpanday1/air-quality-data-in-india-2015-2024) by Ankush Panday on Kaggle.
 - **Developer:** [Aniket Kanojiya](https://github.com/Aniket-Kanojiya)
-- **Organization:** 1M1B (One Million for One Billion) Foundation - USAR
