@@ -155,7 +155,7 @@ Visit **http://localhost:8501** in your web browser, or access the live app dire
 
 ## 📈 Exploratory Data Analysis & Visuals
 
-The automated EDA suite in `src/eda.py` outputs high-resolution figures:
+Running `python src/eda.py` generates the following high-resolution figures locally in `reports/figures/`:
 1. `aqi_trends.png` — Multi-year monthly average AQI trends per city
 2. `correlation_heatmap.png` — Inter-pollutant correlation matrix
 3. `seasonal_patterns.png` — Distribution of AQI across Indian seasons (Winter, Summer, Monsoon, Post-Monsoon)
