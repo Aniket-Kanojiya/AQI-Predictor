@@ -71,7 +71,7 @@ This initiative directly aligns with the United Nations Sustainable Development 
 
 ## 📊 Dataset & NAQI Standards
 
-Data originates from the Central Pollution Control Board (CPCB) monitoring network (2015–2024), containing ~18,265 daily records across 5 metropolitan centers.
+The project uses the **[Air Quality Data in India (2015–2024)](https://www.kaggle.com/datasets/ankushpanday1/air-quality-data-in-india-2015-2024)** dataset from Kaggle, sourced from Central Pollution Control Board (CPCB) monitoring stations across India. It contains ~18,265 daily records across 5 metropolitan centers (Delhi, Mumbai, Kolkata, Chennai, and Bangalore).
 
 ### Indian National Air Quality Index (NAQI) Scale
 
@@ -115,13 +115,13 @@ AQI-Predictor/
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
-`ash
+```bash
 git clone https://github.com/Aniket-Kanojiya/AQI-Predictor.git
 cd AQI-Predictor
-`
+```
 
 ### 2. Set Up Virtual Environment
-`ash
+```bash
 # On Windows
 python -m venv venv
 venv\Scripts\activate
@@ -129,38 +129,38 @@ venv\Scripts\activate
 # On macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
-`
+```
 
 ### 3. Install Dependencies
-`ash
+```bash
 pip install -r requirements.txt
-`
+```
 
 ### 4. Run the Pipeline (Optional)
 To regenerate cleaned data, exploratory figures, and model weights:
-`ash
+```bash
 python src/data_cleaning.py
 python src/eda.py
 python src/features.py
 python src/train.py
-`
+```
 
 ### 5. Launch the Streamlit App
-`ash
+```bash
 streamlit run app/app.py
-`
-Visit **http://localhost:8501** in your web browser.
+```
+Visit **http://localhost:8501** in your web browser, or access the live app directly at **[aqipredictorml.streamlit.app](https://aqipredictorml.streamlit.app/)**.
 
 ---
 
 ## 📈 Exploratory Data Analysis & Visuals
 
-The automated EDA suite in src/eda.py outputs high-resolution figures saved in eports/figures/:
-1. qi_trends.png — Multi-year monthly average AQI trends per city
-2. correlation_heatmap.png — Inter-pollutant correlation matrix
-3. seasonal_patterns.png — Distribution of AQI across Indian seasons (Winter, Summer, Monsoon, Post-Monsoon)
-4. pm25_vs_aqi.png — Scatter analysis highlighting the strong influence of fine particulate matter
-5. missing_data.png — Zero-value and data sparsity distributions
+The automated EDA suite in `src/eda.py` outputs high-resolution figures:
+1. `aqi_trends.png` — Multi-year monthly average AQI trends per city
+2. `correlation_heatmap.png` — Inter-pollutant correlation matrix
+3. `seasonal_patterns.png` — Distribution of AQI across Indian seasons (Winter, Summer, Monsoon, Post-Monsoon)
+4. `pm25_vs_aqi.png` — Scatter analysis highlighting the strong influence of fine particulate matter
+5. `missing_data.png` — Zero-value and data sparsity distributions
 
 ---
 
@@ -172,6 +172,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Acknowledgments & Contact
 
-- **Dataset:** Central Pollution Control Board (CPCB), India via Kaggle.
+- **Dataset:** [Air Quality Data in India (2015–2024)](https://www.kaggle.com/datasets/ankushpanday1/air-quality-data-in-india-2015-2024) by Ankush Panday on Kaggle.
 - **Developer:** [Aniket Kanojiya](https://github.com/Aniket-Kanojiya)
 - **Organization:** 1M1B (One Million for One Billion) Foundation - USAR
