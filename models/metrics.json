@@ -1,0 +1,14 @@
+{
+    "Linear Regression": {
+        "RMSE": 145.5826718513528,
+        "MAE": 126.74446984586615,
+        "R2": -0.0041935999936979496
+    },
+    "best_model": "Linear Regression",
+    "best_params": {},
+    "final_tuned_metrics": {
+        "RMSE": 145.5826718513528,
+        "MAE": 126.74446984586615,
+        "R2": -0.0041935999936979496
+    }
+}
