@@ -1,7 +1,7 @@
 # 🌫️ AQI Predictor — Air Quality Index Estimation & Analytics Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://aqipredictorml.streamlit.app/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-Visuals-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -15,8 +15,7 @@ An end-to-end Machine Learning and Data Analytics project predicting the **Natio
 - **Author:** Aniket Kanojiya  
 - **Club / Program:** 1M1B - USAR  
 - **GitHub Repository:** [https://github.com/Aniket-Kanojiya/AQI-Predictor](https://github.com/Aniket-Kanojiya/AQI-Predictor)  
-- **Live Web Application:** [Add your Streamlit Cloud link here]  
-- **Official Documentation:** [📄 Project Report (Markdown)](./reports/PROJECT_REPORT.md)  
+- **Live Web Application:** 🌐 [https://aqipredictorml.streamlit.app/](https://aqipredictorml.streamlit.app/)  
 
 ---
 
@@ -100,14 +99,12 @@ AQI-Predictor/
 │   ├── aqi_model.pkl          # Trained regression model
 │   ├── feature_columns.pkl    # Serialized feature column list
 │   └── metrics.json           # Model evaluation metrics
-├── reports/
-│   └── PROJECT_REPORT.md      # Official academic & institutional project report
 ├── src/
 │   ├── data_cleaning.py       # Data validation, outlier capping & NAQI buckets
 │   ├── eda.py                 # Generates 5 EDA visual plots
 │   ├── features.py            # Temporal & lag feature extraction
 │   └── train.py               # Model training & serialization
-├── .gitignore                 # Excludes cache, virtualenvs, and intermediate artifacts
+├── .gitignore                 # Excludes cache, virtualenvs, local reports & intermediate data
 ├── LICENSE                    # MIT License
 ├── README.md                  # Project documentation
 └── requirements.txt           # Minimal production dependencies

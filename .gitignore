@@ -1,4 +1,4 @@
-﻿# Byte-compiled / optimized files
+# Byte-compiled / optimized files
 __pycache__/
 *.py[cod]
 *.class
@@ -15,8 +15,8 @@ ENV/
 # Generated intermediate dataset (regenerable via python src/features.py)
 data/features.csv
 
-# Generated figures (regenerable via python src/eda.py)
-reports/figures/
+# Local reports & figures (kept locally, not pushed to GitHub)
+reports/
 
 # Local agent configs & rules
 .agents/
