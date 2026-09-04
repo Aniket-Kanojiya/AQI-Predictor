@@ -7,7 +7,6 @@ encodes categorical variables, and saves the final feature dataset.
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from statsmodels.stats.outliers_influence import variance_inflation_factor
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -66,6 +65,7 @@ if __name__ == '__main__':
     
     # 5. Multicollinearity check
     print("Performing multicollinearity check (VIF)...")
+    from statsmodels.stats.outliers_influence import variance_inflation_factor
     pollutants = ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'CO', 'SO2', 'O3', 'Benzene', 'Toluene', 'Xylene']
     
     while True:
